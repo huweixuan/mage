@@ -1,0 +1,42 @@
+{
+  "name": "app-mage",
+  "description": "dashboard for dianping",
+  "version": "0.1.0",
+  "author": {
+    "name": "huweixuan",
+    "email": "weixuan.hu@dianping.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huweixuan/mage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/huweixuan/mage/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/huweixuan/mage/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "scripts": {
+  },
+  "devDependencies": {
+    "gulp": "~3.6.0",
+    "gulp-less": "~1.2.3",
+    "gulp-imagemin": "~0.1.5"
+  },
+  "keywords": [],
+  "cortex": {
+    "devDependencies": {
+      "neuron": "~3.6.0"
+    },
+    "asyncDependencies": {},
+    "scripts": {
+      "prebuild": "gulp"
+    }
+  }
+}

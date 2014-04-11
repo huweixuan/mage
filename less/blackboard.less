@@ -1,0 +1,41 @@
+@font-face {
+	font-family: "Chalk";
+	src: url(Chalk.ttf);
+} 
+
+.blackboard {
+	background-image: url(img/background.jpg);
+	background-size: 100% 100%;
+	font-family: "STSong", Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+	min-height: 800px;
+
+	.header {
+		font-size: 40px;
+		width: 960px;
+		margin: 0 auto;
+		padding: 40px 0;
+		overflow: auto;
+		hr {
+			display: list-item;
+			list-style: url(img/header_hr.png) inside;
+			filter: alpha(opacity=0);
+			margin-left: -10px;
+			width: 0;
+		}
+	}
+
+	.main {
+		font-size: 26px;
+		padding: 40px;
+		h3 {
+			padding: 20px;
+			em {
+				font-family: "Chalk";
+				color: pink;
+				font-size: 36px;
+			}
+		}
+	}
+}
