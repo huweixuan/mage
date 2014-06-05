@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<link rel="stylesheet" href="../css/jquery.sidr.dark.css">
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="../js/jquery.sidr.min.js"></script>
+<style>
+  #category {
+    display: block;
+    width: 6px;
+    text-decoration: none;
+    color: white;
+    top: 50%;
+  }
+</style>
+</head>
+<body>
+<div data-role="page" id="pageone" data-theme="b">
+  <div data-role="header" data-position="fixed">
+    <h1>点菜</h1>
+  </div>
+
+  <div data-role="content">
+    <ul data-role="listview" data-inset="true" data-icon="plus">
+      <li data-role="list-divider"><a href="#sidr" id="category">川菜</a></li>
+      <li><a href="#">鱼香肉丝<span class="ui-li-count">1</span></a></li>
+      <li><a href="#">宫保鸡丁<span class="ui-li-count">1</span></a></li>
+      <li><a href="#">水煮鱼<span class="ui-li-count">1</span></a></li>
+    </ul>
+  </div>
+  <nav id="sidr">
+    <ul>
+      <li><a href="#">全部</a></li>
+      <li><a href="#">冷菜</a></li>
+      <li>
+        <a href="#">热菜</a>
+        <ul>
+          <li class="active"><a href="#">川菜</a></li>
+          <li><a href="#">湘菜</a></li>
+          <li><a href="#">粤菜</a></li>
+          <li><a href="#">本帮菜</a></li>
+        </ul>
+      </li>
+      <li><a href="#">点心</a></li>
+      <li><a href="#">饮料</a></li>
+    </ul>
+  </nav>
+
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="menu.html" data-icon="bars">点菜</a></li>
+        <li><a href="check.html" data-icon="check">已点</a></li>
+      </ul>
+    </div>
+  </div>
+</div> 
+<script>
+  $(function () {
+    $("#category").sidr();
+  })
+</script>
+</body>
+</html>
