@@ -8,15 +8,6 @@
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 <script src="../js/jquery.sidr.min.js"></script>
-<style>
-  #category {
-    display: block;
-    width: 6px;
-    text-decoration: none;
-    color: white;
-    top: 50%;
-  }
-</style>
 </head>
 <body>
 <div data-role="page" id="pageone" data-theme="b">
@@ -26,10 +17,10 @@
 
   <div data-role="content">
     <ul data-role="listview" data-inset="true" data-icon="plus">
-      <li data-role="list-divider"><a href="#sidr" id="category">川菜</a></li>
-      <li><a href="#">鱼香肉丝<span class="ui-li-count">1</span></a></li>
-      <li><a href="#">宫保鸡丁<span class="ui-li-count">1</span></a></li>
-      <li><a href="#">水煮鱼<span class="ui-li-count">1</span></a></li>
+      <li data-role="list-divider"><a href="#sidr" id="category" style="text-decoration: none; color: white;"><span class="ui-btn-icon-notext ui-icon-bullets" style="position: relative; left: 0px; top: 8px;"></span><span style="position: relative; left: 20px; display: inline-block;">川菜</span></a></li>
+      <li><a href="#"><img src="../css/img/album-bb.jpg"/><p>鱼香肉丝&nbsp;&nbsp;￥23.00</p><p>介绍</p><span class="ui-li-count">1</span></a></li>
+      <li><a href="#"><img src="../css/img/album-bb.jpg"/><p>宫保鸡丁&nbsp;&nbsp;￥23.00</p><p>介绍</p><span class="ui-li-count">1</span></a></li>
+      <li><a href="#"><img src="../css/img/album-bb.jpg"/><p>水煮鱼&nbsp;&nbsp;￥23.00</p><p>介绍</p><span class="ui-li-count">1</span></a></li>
     </ul>
   </div>
   <nav id="sidr">
