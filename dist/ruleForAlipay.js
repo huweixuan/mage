@@ -1,0 +1,1 @@
+function fix(r){return Math.round(100*r)/100}function rule(r){var u=!1,i=Number("${discountRate}");return _ruleForAlipay(r,u,i)}function _ruleForAlipay(r,u,i){if(u){var n=r*i;return fix(10*i)+"折立减"+fix(r-n)+"元，实付"+fix(n)+"元"}}

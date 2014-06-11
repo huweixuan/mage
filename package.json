@@ -22,12 +22,12 @@
   "engines": {
     "node": ">= 0.6.0"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "devDependencies": {
     "gulp": "~3.6.0",
     "gulp-less": "~1.2.3",
-    "gulp-imagemin": "~0.1.5"
+    "gulp-imagemin": "~0.1.5",
+    "gulp-uglify": "^0.3.0"
   },
   "keywords": [],
   "cortex": {

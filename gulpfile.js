@@ -2,6 +2,13 @@ var gulp = require('gulp');
 
 var imagemin = require('gulp-imagemin');
 var less = require('gulp-less');
+var uglify = require('gulp-uglify');
+
+gulp.task('compress', function() {
+  gulp.src(['js/ruleForAlipay.js', 'js/ruleForWeixin.js'])
+    .pipe(uglify())
+    .pipe(gulp.dest('dist'))
+});
 
 // Copy all static images
 gulp.task('imagemin', function() {
