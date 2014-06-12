@@ -11,4 +11,5 @@ function _ruleForAlipay ( originalAmount, hasCouponOffer, discountRate ) {
     var realAmount = originalAmount * discountRate;
     return fix( discountRate * 10 ) + '折立减' + fix( originalAmount - realAmount ) + '元，实付' + fix( realAmount ) + '元';
   }
+  return '实付' + fix( originalAmount ) + '元';
 }
