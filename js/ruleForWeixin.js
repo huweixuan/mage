@@ -1,5 +1,5 @@
 function fix ( num ) {
-  return Math.round( num * 100 ) / 100;
+  return Math.ceil( num * 100 ) / 100;
 }
 function rule ( originalAmount ) {
   var isGreedyUser = ${isGreedyUser}, 
@@ -12,10 +12,7 @@ function rule ( originalAmount ) {
 function _ruleForWeixin ( originalAmount, isGreedyUser, hasCouponOffer, minLotteryAmount, discountAmount, discountRate ) {  
   if ( hasCouponOffer ) {
     var realAmount = originalAmount * discountRate;
-    if ( realAmount <= minLotteryAmount ) {
-      return '折扣金额' + minLotteryAmount + '元以上才有折扣哦';
-    }
-    if ( isGreedyUser ) {
+    if ( isGreedyUser || realAmount <= minLotteryAmount) {
       return fix( discountRate * 10 ) + '折立减' + fix( originalAmount - realAmount ) + '元，实付' + fix( realAmount ) + '元';
     }
     return fix( discountRate * 10 ) + '折立减' + fix( originalAmount - realAmount ) + '元，随机立减' + discountAmount + '元，实付' + fix( realAmount - discountAmount ) + '元';

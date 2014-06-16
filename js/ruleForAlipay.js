@@ -1,5 +1,5 @@
 function fix ( num ) {
-  return Math.round( num * 100 ) / 100;
+  return Math.ceil( num * 100 ) / 100;
 }
 function rule ( originalAmount ) {
   var hasCouponOffer = ${hasCouponOffer},
